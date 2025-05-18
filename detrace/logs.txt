@@ -1,2 +1,0 @@
-test1.c opened successfully.
-test1.c closed successfully.
