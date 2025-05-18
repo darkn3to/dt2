@@ -1,0 +1,71 @@
+.code-editor {
+  flex: 1;
+  background-color: rgba(0, 0, 0, 0.68);
+  color: #d4d4d4;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  white-space: pre;
+  padding: 20px;
+  margin: 10px;
+  box-sizing: border-box;
+  overflow: auto;
+  height: 100%;
+  border-radius: 20px; /* or keep a consistent radius across both */
+  border: 2px solid #484849;
+  backdrop-filter: blur(10px);
+}
+
+/* Wrapper for actual code block */
+.code {
+  padding: 0;
+  width: max-content;
+  height: 100%;
+}
+
+.code-editor pre {
+  margin: 0;
+}
+
+.code-editor code {
+  display: block;
+  text-align: left;
+}
+
+/* Search bar above code */
+.search-container {
+  padding: 10px 20px;
+  background-color: #252526;
+  border-bottom: 1px solid #3c3c3c;
+  display: flex;
+  gap: 10px;
+  box-sizing: border-box;
+}
+
+.search-container input[type="text"] {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid #3c3c3c;
+  background-color: #333333;
+  color: #cccccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.search-container input[type="text"]:focus {
+  border-color: #007acc;
+}
+
+.search-container button {
+  padding: 8px 15px;
+  background-color: #0e639c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}
+
+.search-container button:hover {
+  background-color: #1177bb;
+}
