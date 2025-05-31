@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const { spawn } = require('child_process');
 const path = require('path');
 const app = express();
-const PORT = 3002;
+const PORT = 8080;
 const cors = require('cors');
 
 const constPath = path.join(__dirname, 'uploads');
