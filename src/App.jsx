@@ -76,22 +76,6 @@ function App() {
     return '';
   };
 
-  const handleSearch = async (query) => {
-    setSearchQuery(query);
-    if (!selectedFile || !searchQuery) {
-      console.log("No file selected or search query is empty.");
-      return;
-    }
-
-    const command = `echo "${selectedFile.content}" | grep "${searchQuery}"`;
-
-    const simulatedTerminalOutput = await runTerminalCommandPlaceholder(command);
-
-    const lines = simulatedTerminalOutput ? simulatedTerminalOutput.split('\n') : [];
-
-    const parsedResults = lines.map(line => line).filter(line => line.length > 0);
-    setSearchResults(parsedResults);
-  };
 
   return (
     <div className="app-container">
