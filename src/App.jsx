@@ -7,8 +7,7 @@ import ComparisonComponent from './components/ComparisonComponent.jsx';
 function App() {
   const [files, setFiles] = useState([]);
   const [selectedFile, setSelectedFile] = useState(null);
-  const [searchQuery, setSearchQuery] = useState('');
-  const [searchResults, setSearchResults] = useState([]);
+  const [searchResults] = useState([]);
   const [comparisonResult, setComparisonResult] = useState('');
   const [history, setHistory] = useState([]);
 
@@ -69,11 +68,6 @@ function App() {
   const handleFileSelect = (file) => {
     setSelectedFile(file);
     setComparisonResult('');
-  };
-
-  const runTerminalCommandPlaceholder = async (command) => {
-    console.log(`Attempting to run terminal command: ${command}`);
-    return '';
   };
 
 
