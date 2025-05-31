@@ -15,7 +15,6 @@ const CodeEditor = ({ content, searchResults }) => {
 
       if (lineResults.length > 0) {
         let highlightedLine = '';
-        let lastIndex = 0;
         highlightedLine = <span className="highlight">{line}</span>;
 
         return highlightedLine;
